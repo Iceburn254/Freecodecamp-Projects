@@ -1,0 +1,121 @@
+.img-cont{
+  height: 100vh;
+  width: 100vw;
+  margin-top: 40px;
+  overflow: hidden;     /* crops excess */
+  border-radius: 3px;
+}
+
+#header-img{
+  width: 100%;
+  height: 100%;    
+  object-position: center;
+}
+#nav-bar{
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -10px;
+  width: 100%;
+  height: 50px;
+  background-color: darkgray;
+  border-bottom: 2px solid black;
+}
+#nav-bar ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0 20px;
+  align-items: center;
+  width: 100%;
+}
+ #nav-bar a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 10px;
+ }
+.main-container{
+  width: 98%;
+  height: 270px;
+  border: 0.5px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+.sub-box{
+  width: 100px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+.sub-head{
+  font-size: 1.2rem;
+  border-bottom: 2px solid black;
+  
+}
+.ben-box{
+  width: 100px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+.ben-head{
+  font-size: 1.1rem;
+  border-bottom: 2px solid black;
+  
+}
+.genre-container{
+  width: 98%;
+  height: 250px;
+  border: 0.5px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #969292;
+}
+.genre-box{
+  width: 21.8%;
+  border: none;
+  background-color: black;
+  height: 20%;
+}
+.genre-content1{
+  color: orange;
+  text-align: center;
+  margin-top: 15px;
+  letter-spacing: 0.1em;
+}
+.genre-content2{
+  color: #0BE5E5;
+  text-align: center;
+  margin-top: 15px;
+  letter-spacing: 0.1em;
+}
+.genre-content3{
+  color: #F2EE3F;
+  text-align: center;
+  margin-top: 15px;
+  letter-spacing: 0.03em;
+}
+.genre-content4{
+  color:#8A3FF2;
+  text-align: center;
+  margin-top: 15px;
+  letter-spacing: 0.20em;
+}
+@media (max-width: 768px) {
+    #nav-bar ul {
+      flex-direction: column; 
+      gap: 10px;
+      padding: 10px 0;
+    }
+  }

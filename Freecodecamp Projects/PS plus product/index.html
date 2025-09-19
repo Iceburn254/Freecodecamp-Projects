@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="img-cont">
+      <img src="../myassets/PS30TH_16x10_WALLPAPER.png" id="header-img" alt="ps logo">
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#benefits" class="nav-link">Benefits</a></li>
+          <li><a href="#subscription" class="nav-link">Subscription</a></li>
+          <li><a href="#genres" class="nav-link">Genres</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main-section" id="home">
+        <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form">
+        <input type="email" id="email"   placeholder="enter your email" name="email" required/>
+        <input type="submit" id="submit" />
+        </form>
+      </section>
+      <section class="main-section">
+        <h1>Watch this video:</h1>
+
+    <iframe
+      id="video" 
+      width="400" 
+      height="255" 
+      src="https://www.youtube.com/embed/VIDEO_ID" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen>
+    </iframe>
+  </section>
+        <section class="main-section" id="subscription">
+          <div class="main-container">
+            <div class="sub-box">
+              <div class="sub-head">
+              <h3>Deluxe</h3>
+              </div>
+              <p>Subscribe today</p>
+              <p>R 2199.0</p>
+            </div>
+            <div class="sub-box">
+              <div class="sub-head">
+              <h3>Extra</h3>
+              </div>
+              <p>Subscribe today</p>
+              <p>R 1869.0</p>
+            </div>
+            <div class="sub-box">
+              <div class="sub-head">
+              <h3>Essential</h3>
+              </div>
+              <p>Subscribe today</p>
+              <p>R 1109.0</p>
+            </div>
+          </div>
+        </section>
+        <section class="main-section" id="benefits">
+          <div class="main-container">
+            <div class="ben-box">
+              <div class="ben-head">
+                <h3>Game trials</h3></div>
+                <ul>
+                  <li>The Crew</li>
+                  <li>NFS Unbound</li>
+                  <li>NHL 24</li>
+                </ul>
+              
+            </div>
+            <div class="ben-box">
+            <div class="ben-head">
+              <h3>Classic Catalog</h3>
+            </div>
+            <ul>
+              <li>God Of War</li>
+              <li>Tekken 5</li>
+              <li>Bully</li>
+            </ul>
+            </div>
+            <div class="ben-box">
+              <div class="ben-head">
+                <h3>Game trials</h3>
+              </div>
+              <ul>
+                <li>FC 25</li>
+                <li>NBA 2K25</li>
+                <li>Baldur IV</li>
+                
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="main-section" id="genres">
+          <div class="genre-container">
+            <div class="genre-box">
+              <div class="genre-content1">RPG</div>
+            </div>
+            <div class="genre-box">
+              <div class="genre-content2">ACTION</div>
+            </div>
+            <div class="genre-box">
+              <div class="genre-content3">SHOOTER</div>
+            </div>
+            <div class="genre-box">
+              <div class="genre-content4">SPORTS</div>
+            </div>
+          </div>
+        </section>
+    </main>
+  
+  </body>
+</html>

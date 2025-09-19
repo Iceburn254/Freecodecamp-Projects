@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My survey form</title>
+  <link rel="stylesheet" href="style.css"> 
+  </head>
+  <body>
+    <main>
+      <div class="frame">
+    <h1 id="title">My Survey Form</h1>
+    <p id="description"><strong>Fill the survey below:</strong></p>
+    <form id="survey-form"
+    action="https://www.freecodecamp.org/" method="post">
+    <fieldset>
+    <label for="name" id="name-label">Enter your name: <input type="text" id="name" placeholder="Steve" required/></label>
+    <label for="email" id="email-label">
+      Enter your Email: <input type="email" id="email" placeholder="steve@gmail.com" required/>
+    </label>
+    <label for="number" id="number-label">
+      Enter your age: <input type="number" id="number" min="8" max="100" placeholder="15"/>
+    </label>
+    <label for="dropdown">
+      Which option best describes your current role?
+      <select id="dropdown">
+        <option value="">Select current role</option>
+        <option value="1">Student</option>
+        <option value="2">Full time job</option>
+      </select>
+    </label>
+    </fieldset>
+    <fieldset>
+      <legend>What is your preferred contact method?</legend>
+      <input type="radio" name="contact" value="phone">Email
+      <input type="radio" name="contact" value="phone">Phone
+      <input type="radio" name="contact" value="sms">SMS
+    </fieldset>
+    <fieldset>
+      <legend>What is your time availability?</legend>
+      <input type="checkbox" name="time" value="Morning">Morning<br>
+      <input type="checkbox" name="time" value="Afternoon">Afternoon<br>
+      <input type="checkbox" name="time" value="Evening">Evening<br>
+      <label for="comments">Any additional comments
+        <textarea id="comments" rows="3" cols="20" placeholder="write your comments here"></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit">
+    </fieldset>
+    </form>
+    </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+
+#navbar{
+  background: #BE3144;
+  width: 100%;
+  font-size: 17.5px;
+  font-family: Poppins, sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0; 
+  right: 0;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.welcome-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #000;
+}
+h1{
+  font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+p{
+  color: #D10000;
+  margin-top: -12px;
+  font-size: 1.8rem;
+}
+
+.projects{
+  background-color: #6F8FAF;
+  height: 100vh;
+  width: 100%;
+}
+h2{
+  font-size: 1.8rem;
+  border-bottom: 2px white solid;
+  width: fit-content;
+  font-family: Raleway, sans-serif;
+  color: white 
+}
+.wrapper{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.projects-grid{
+  display: grid;
+  grid-template-columns:  repeat(3, 1fr);
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 20px;
+}
+.project-image{
+  height: 40vh;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.project-p{
+  font-size: 1.5rem;
+  color: white;
+}
+
+.contacts{
+  height: 100vh;
+  width: 100%;
+  background: #088F8F;
+}
+.contact-header{
+  display: flex;
+  justify-content: center;
+}
+.contact-header h3{
+  font-size: 1.7rem;
+  font-family: arial;
+  margin-top: 100px;
+}
+.contact-links{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.contact-links p{
+  font-size: 1.2rem;
+  color: white;
+  
+}
+contact-links a{
+  margin: auto;
+}
+
+@media (max-width: 600px){
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+}

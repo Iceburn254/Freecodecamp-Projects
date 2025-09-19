@@ -1,0 +1,21 @@
+body{
+margin: 0.5rem;
+}
+
+
+label{
+  display: block;
+  padding: 0.5rem ;
+}
+fieldset{
+  padding: 0.7rem;
+  margin: 0.8rem;
+}
+
+textarea{
+  height: px;
+}
+
+h1,h1+p{
+  text-align: center;
+}

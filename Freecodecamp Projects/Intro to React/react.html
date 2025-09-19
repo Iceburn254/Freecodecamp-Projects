@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting Started with React</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    #navbar {
+      background-color: #2f2626;
+      padding: 20px;
+    }
+
+    #navbar header {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #c5aa6a;
+      border-bottom: 2px solid #5f4c4c;
+      padding-bottom: 5px;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 8px 0;
+      text-decoration: none;
+      color: #c5aa6a;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    #main-doc {
+      padding: 20px;
+    }
+
+    .main-section {
+      margin-bottom: 40px;
+    }
+
+    .main-section header {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    code {
+      display: block;
+      background: #eee;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    @media (min-width: 768px) {
+      #navbar {
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        border-right: 1px solid #ccc;
+      }
+
+      #main-doc {
+        margin-left: 270px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>Getting Started with React</header>
+    <a class="nav-link" href="#Introduction_to_React">Introduction to React</a>
+    <a class="nav-link" href="#Setting_Up_the_Environment">Setting Up the Environment</a>
+    <a class="nav-link" href="#JSX_and_Components">JSX and Components</a>
+    <a class="nav-link" href="#State_and_Props">State and Props</a>
+    <a class="nav-link" href="#Using_Hooks">Using Hooks</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction_to_React">
+      <header>Introduction to React</header>
+      <p>React is a JavaScript library developed by Facebook for building user interfaces, especially for single-page applications.</p>
+      <p>It allows developers to create large web applications that can update and render efficiently.</p>
+      <ul>
+        <li>Component-based</li>
+        <li>Declarative syntax</li>
+        <li>Learn once, write anywhere</li>
+      </ul>
+      <code>const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;</code>
+    </section>
+
+    <section class="main-section" id="Setting_Up_the_Environment">
+      <header>Setting Up the Environment</header>
+      <p>You can start with Create React App, Vite, or Next.js.</p>
+      <p>Here’s how to initialize a project using Create React App:</p>
+      <code>npx create-react-app my-app</code>
+      <p>Then run your app:</p>
+      <code>cd my-app && npm start</code>
+    </section>
+
+    <section class="main-section" id="JSX_and_Components">
+      <header>JSX and Components</header>
+      <p>JSX is a syntax extension that looks similar to HTML and is used with React.</p>
+      <p>Components are the building blocks of React apps.</p>
+      <code>
+        function Welcome() {
+          return &lt;h1&gt;Hello, User!&lt;/h1&gt;;
+        }
+      </code>
+      <ul>
+        <li>Functional components</li>
+        <li>Class components</li>
+        <li>Reusability</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="State_and_Props">
+      <header>State and Props</header>
+      <p>Props are used to pass data from parent to child components.</p>
+      <p>State is used to manage dynamic data within a component.</p>
+      <code>
+        const [count, setCount] = useState(0);
+      </code>
+      <p>You can pass props like this:</p>
+      <code>
+        &lt;Welcome name="Sam" /&gt;
+      </code>
+    </section>
+
+    <section class="main-section" id="Using_Hooks">
+      <header>Using Hooks</header>
+      <p>Hooks let you use state and other React features without writing a class.</p>
+      <ul>
+        <li>useState</li>
+        <li>useEffect</li>
+        <li>useContext</li>
+      </ul>
+      <p>The useEffect hook runs side effects in function components:</p>
+      <code>
+        useEffect(() =&gt; {<br>
+          console.log("Component mounted");<br>
+        }, []);
+      </code>
+    </section>
+  </main>
+
+</body>
+</html>
