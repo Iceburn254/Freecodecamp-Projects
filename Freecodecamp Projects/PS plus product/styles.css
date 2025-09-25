@@ -1,18 +1,4 @@
-.img-cont{
-  height: 100vh;
-  width: 100vw;
-  margin-top: 40px;
-  overflow: hidden;     /* crops excess */
-  border-radius: 3px;
-  margin-bottom: 3px;
-}
 
-#header-img{
-  width: 100%;
-  height: 100%;    
-  object-position: center;
-  
-}
 #nav-bar{
   position: absolute;
   top: 0;
@@ -40,14 +26,13 @@
       padding: 10px;
  }
 .main-container{
-  width: 98%;
-  height: 50vh;
-  border: 0.5px solid black;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 10px;
+  
   
 }
 
@@ -58,43 +43,156 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #e4d00a;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  color: #E0E0E0;
   font-size: 1.5rem;
   text-align: center;
+  margin-bottom: 3px;
+  padding: 60px 0;
   
 }
+
+#home h1{
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #FFD300;
+}
+
+
 input{
   margin: 10px;
   padding: 8px;
   border-radius: 5px;
+  background: transparent;
+  color: white;
 }
+
+#submit{
+  padding: 8px;
+  border-radius: 5px;
+  background-color: orange;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+#submit:hover{
+  background-color: black;
+  color: yellow;
+  font-weight: bolder;
+  box-shadow: 0 0 10px yellow;
+}
+
+#video{
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #9D4BFF;
+}
+
+#subscription{
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../myassets/subs.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
 .sub-box{
-  width: 100px;
-  height: 200px;
-  border: 1px solid black;
+  width: 21%;
+  height: 340px;
+  border: 2px solid #00E5FF;
+  box-shadow: 0 0 12px #00E5FF;
   border-radius: 10px;
   padding: 5px;
+  color: #E0E0E0;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.9;
 }
+
 .sub-head{
-  font-size: 1.2rem;
-  border-bottom: 2px solid black;
-  
-}
-.ben-box{
-  width: 100px;
-  height: 200px;
-  border: 1px solid black;
-  border-radius: 10px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #00E5FF;
+  color: #FFFFFF;
+  top: 0;
+  position: relative;
   padding: 5px;
+  text-align: center;
 }
+.sub-box p:last-of-type{
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #FFFFFF;  
+}
+
+#benefits{
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../myassets/Benefits.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.ben-box{
+  width: 20%;
+  height: 350px;
+  border: 2px solid #00CFFF;   /* Neon Blue */
+  box-shadow: 0 0 10px #00CFFF;
+  border-radius: 10px;
+  padding: 10px;
+  color: #E0E0E0;
+}
+.ben-box li{
+  margin: 20px;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
 .ben-head{
-  font-size: 1.1rem;
+  font-size: 1.48rem;
   border-bottom: 2px solid black;
+  color: #39FF14;   /* Neon Green */
+  top: 0;
+  position: relative;
+  padding: 5px;
+  text-align: center;
   
 }
+
+#genres{
+  height: 60vh;
+  width: 100vw;
+  background-image: url("../myassets/PS30TH_16x10_WALLPAPER.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
 .genre-container{
   width: 98%;
   height: 250px;

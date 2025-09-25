@@ -30,14 +30,16 @@ nav a{
   background: #000;
 }
 h1{
-  font-size: 3rem;
+  font-size: 4.2rem;
   font-family: 'Raleway', sans-serif;
   color: white;
 }
-p{
-  color: #D10000;
+.welcome-section p{
+  color: #A6A6A6;
   margin-top: -12px;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
+  max-width: 48rem;
+
 }
 
 .projects{
@@ -62,8 +64,11 @@ h2{
   grid-template-columns:  repeat(3, 1fr);
   max-width: 1000px;
   margin: 0 auto;
-  gap: 20px;
+  gap: 2.3rem;
+  margin-top: 3rem;
+  padding: 2rem;
 }
+
 .project-image{
   height: 40vh;
   width: 100%;
@@ -71,37 +76,77 @@ h2{
   object-fit: cover;
 }
 
-.project-p{
-  font-size: 1.5rem;
-  color: white;
+.project-card{
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #1C1C1C;
 }
-
+.project-card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+.project-text{
+  padding: 1.1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #E0E0E0;
+}
+.project-text a{
+  text-decoration: none;
+  
+}
 .contacts{
   height: 100vh;
   width: 100%;
-  background: #088F8F;
-}
-.contact-header{
+  background: #112240;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.contact-header h3{
-  font-size: 1.7rem;
-  font-family: arial;
-  margin-top: 100px;
-}
-.contact-links{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-.contact-links p{
-  font-size: 1.2rem;
+.contacts h2{
   color: white;
+  font-family: Raleway, sans-serif;
+  font-size: 2.3rem;
+  border-bottom: 2px white solid;
+
+}
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  max-width: 670px;
+  min-width: 650px;
   
 }
-contact-links a{
-  margin: auto;
+
+label{
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+input, textarea{
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+button{
+  padding: 0.4rem 1.1rem;
+  background: #BE3144;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
 
 @media (max-width: 600px){

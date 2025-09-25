@@ -21,39 +21,64 @@
     <main>
       <section id="welcome-section" class="welcome-section">
         <h1>Hey I am Nyamo!</h1>
-        <p>a web developer</p>
+        <p>I'm a passionate developer focused on building beautiful and functional web applications.</p>
       </section>
       <section id="projects" class="projects">
         <div class="wrapper">
         <h2>These are some of my projects</h2>
         </div>
         <div class="projects-grid">
-
+          <div class="project-card">
           <a href="https://github.com/Iceburn254/First-project" target="_blank" class="project-tile">
-          <img src="Signup(project1).png" alt="projectimage" class="project-image">
-          <p class="project-p">Sign-up Page</p>
+          <img src="../Freecodecamp Projects/myassets/Signup(project1).png" alt="projectimage" class="project-image">
+          <div class="project-text">
+          <p>Sign-up Page</p>
+          <p>Built using CSS and HTML</p>
+          </div>
           </a>
+          </div>
 
+          <div class="project-card">
           <a href="https://github.com/Iceburn254/First-project" target="_blank" class="project-tile">
-            <img src="Login page(project1).png" alt="projectimage" class="project-image">
-            <p class="project-p">Log-in Page</p>
+            <img src="../Freecodecamp Projects/myassets/Login page(project1).png" alt="projectimage" class="project-image">
+            <div class="project-text">
+            <p>Log-in Page.</p>
+            <p>Built using CSS and HTML</p>
+            </div>
           </a>
+          </div>
 
+          <div class="project-card">
           <a href="https://github.com/Iceburn254/2nd-project" target="_blank" class="project-tile">
-          <img src="React.png" alt="projectimage" class="project-image">
-          <p class="project-p">Intro to React</p>
+          <img src="../Freecodecamp Projects/myassets/React.png" alt="projectimage" class="project-image">
+          <div class="project-text">
+          <p>Intro to React</p>
+          <p>Built using HTML and CSS</p>
+          </div>
           </a>
+        </div>
 
         </div>
       </section>
+
       <section id="contact" class="contacts">
-        <div class="contact-header">
-          <h3>Lets work together...</h3>
-        </div>
-        <div class="contact-links">
-          <p>For more information reach out to my Github:</p><br>
-          <a href="https://github.com/Iceburn254" id="profile-link" target="_blank">
-          <img src="github.png" alt="logo" width="20" height="20">Github</a>
+        <h2>Let's work together...</h2>
+        <div class="form-container">
+          <form action="#" method="POST">
+            <div class="form-field"> 
+              <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-field"> 
+              <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+            <textarea name="message" rows="5" id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
         </div>
       </section>
     </main>
